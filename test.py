@@ -5,7 +5,7 @@ from domain.mcu_addressing import MCULogicalAddressRange
 from domain.st10.st10f276 import ST10F276FlashBlocksCatalog
 from intelhex import IntelHex
 
-p = Serial('COM4', 9600)
+p = Serial('/dev/ttyUSB0', 9600)
 def accept_chip_id(chip_id):
      print("CHIP ID: " + str(chip_id))
      return True
